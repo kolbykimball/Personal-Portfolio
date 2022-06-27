@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    background-color: #EFEFEF;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +21,10 @@ h1 {
     font-size: 32px;
 }
 
+h2 {
+    text-align: center;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -25,7 +34,7 @@ nav {
 }
 
 nav a {
-    color: #d1d1d1;
+    color: #7882A4;
     padding: 10px 20px;
     text-align: center;
     font-size: 18px;
@@ -35,9 +44,13 @@ a:hover {
     color: #fff;
 }
 
-main {
-    display: flex;
-    flex-wrap: wrap;
+
+p {
+    padding: 0 20px 20px 0;
+}
+
+img {
+    width: 400px;
 }
 
 footer {
@@ -46,9 +59,73 @@ footer {
     margin: 0 30%;
 }
 
-.project-cards {
-    flex: 3;
+#about {
+    padding: 1rem 8rem;
+    text-align: center;
+}
+
+#contact {
+
+}
+
+input[type=text], select {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    resize: none;
+}
+
+textarea {
+    position: absolute;
+    margin-left: 200px;
+    width: 40%;
+}
+
+input[type=submit] {
+    position: relative;
+    margin-right: 200px;
+    background-color: #7882A4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: inline-start;
+}
+
+input[type=submit]:hover {
+    background-color: #D1D1D1;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #D1D1D1;
+    padding: 20px
+}
+
+.headshot {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.row {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0px;
+    
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.website-card {
+    box-sizing: content-box;
+    
 }
 
 .card {
@@ -57,4 +134,17 @@ footer {
     border-radius: 10px;
     padding: 15px;
     flex: 0 0 400px;
+}
+
+.card-header {
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
 }
