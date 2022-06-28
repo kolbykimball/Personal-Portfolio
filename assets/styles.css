@@ -1,150 +1,165 @@
 * {
-    box-sizing: border-box;
-    background-color: #EFEFEF;
+  box-sizing: border-box;
+  background-color: #efefef;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    padding: 50px;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 50px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    background-color: #7882A4;
-    margin: 0 20%;
-    
+  display: flex;
+  justify-content: center;
+  background-color: #7882a4;
+  margin: 0 20%;
 }
 
 nav a {
-    color: #7882A4;
-    padding: 10px 20px;
-    text-align: center;
-    font-size: 18px;
+  color: #7882a4;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
 }
 
 a:hover {
-    color: #fff;
+  color: #fff;
 }
 
-
 p {
-    padding: 0 20px 20px 0;
+  padding: 0 20px 20px 0;
 }
 
 img {
-    width: 400px;
+  width: 400px;
+}
+
+.website-img {
+  width: 100%;
 }
 
 footer {
-    text-align: center;
-    background-color: #D1D1D1;
-    margin: 0 30%;
+  text-align: center;
+  background-color: #d1d1d1;
+  margin: 0 30%;
 }
 
 #about {
-    padding: 1rem 8rem;
-    text-align: center;
+  padding: 1rem 8rem;
+  text-align: center;
 }
 
 #contact {
-
+  width: 100%;
+  justify-content: center;
+  /* padding-left: ; */
 }
 
-input[type=text], select {
-    width: 40%;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    resize: none;
+input[type="text"],
+select {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  resize: none;
 }
 
 textarea {
-    position: absolute;
-    margin-left: 200px;
-    width: 40%;
+  width: 100%;
 }
 
-input[type=submit] {
-    position: relative;
-    margin-right: 200px;
-    background-color: #7882A4;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    float: inline-start;
+input[type="submit"] {
+  position: relative;
+  margin-right: 200px;
+  background-color: #7882a4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: inline-start;
 }
 
-input[type=submit]:hover {
-    background-color: #D1D1D1;
+input[type="submit"]:hover {
+  background-color: #d1d1d1;
 }
 
 .container {
-    border-radius: 5px;
-    background-color: #D1D1D1;
-    padding: 20px
+  border-radius: 5px;
+  background-color: #d1d1d1;
+  padding: 20px;
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .headshot {
-    width: 200px;
-    border-radius: 50%;
+  width: 200px;
+  border-radius: 50%;
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0px;
-    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0px;
 }
 
 .justify-center {
-    justify-content: center;
+  justify-content: center;
 }
 
 .website-card {
-    box-sizing: content-box;
-    
+  box-sizing: content-box;
+  flex-basis: 80%;
+  
 }
 
 .card {
-    border-style: dashed;
-    border-width: 2px;
-    border-radius: 10px;
-    padding: 15px;
-    flex: 0 0 400px;
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 15px;
+  flex: 0 0 400px;
 }
 
 .card-header {
-    font-size: 18px;
-    text-align: center;
-    position: relative;
-
+  font-size: 18px;
+  text-align: center;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-    }
+  nav {
+    flex-direction: column;
+  }
+
+  .website-card {
+    /* max-width: 515px; */
+    flex-basis: auto;
+    width: auto;
+  }
+
+  .website-img {
+    width: 400px;
+  }
 }
