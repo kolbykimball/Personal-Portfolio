@@ -4,6 +4,8 @@
 
 Build out a personal portfolio with about section, photo and image links to past projects/applications. First application is largest and page is responsive. Menu links to corresponding part of page. 
 
+See deployed site here -> https://kolbykimball.github.io/Personal-Portfolio/
+
 ## Credits
 
 Kolby Kimball
